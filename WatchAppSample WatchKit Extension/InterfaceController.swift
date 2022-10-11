@@ -7,20 +7,65 @@
 
 import WatchKit
 import Foundation
-
+import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var label: WKInterfaceLabel!
+    let session = WCSession.default
+    
+    
     override func awake(withContext context: Any?) {
-        // Configure interface objects here.
+        super.awake(withContext: context)
+        session.delegate = self
+        session.activate()
     }
     
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
+        super.willActivate()
+        print("WillActive")
     }
     
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
+        print("DidDeactivate")
     }
+    
+    
+    @IBAction func onClickReset() {
+        print("onClickReset is tapped")
+        label.setText("Label")
+    }
+    
+    
+    @IBAction func tapSendToiPhone() {
+        print("tapSendToiPhone is tapped")
+        let data: [String: Any] = ["watch": "data from watch" as Any]
+        session.transferUserInfo(data)
+    }
+    
 
+}
+
+extension InterfaceController: WCSessionDelegate {
+    func session(
+        _ session: WCSession,
+        activationDidCompleteWith activationState: WCSessionActivationState,
+        error: Error?
+    ) {
+        print("ActivationDidCompleteWith")
+    }
+    
+    func session(
+        _ session: WCSession,
+        didReceiveUserInfo userInfo: [String : Any] = [:]
+    ) {
+        print("received data: \(userInfo)")
+        if let value = userInfo["iPhone"] as? String  {
+            DispatchQueue.main.async {
+                self.label.setText(value)
+            }
+        }
+    }
+    
 }

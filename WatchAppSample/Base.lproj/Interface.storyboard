@@ -12,9 +12,20 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchAppSample" customModuleProvider="target">
                     <items>
                         <label width="70" alignment="left" text="Label" id="MJH-tT-JrN"/>
-                        <button width="1" alignment="left" title="Button" id="w8T-oK-WxQ"/>
-                        <button width="1" alignment="left" title="Reset" id="PCO-At-L0H"/>
+                        <button width="1" alignment="left" title="Button" id="w8T-oK-WxQ">
+                            <connections>
+                                <action selector="tapSendToiPhone" destination="AgC-eL-Hgc" id="dmf-Qy-qsq"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Reset" id="PCO-At-L0H">
+                            <connections>
+                                <action selector="onClickReset" destination="AgC-eL-Hgc" id="f90-pn-bve"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="label" destination="MJH-tT-JrN" id="J3B-RG-dYT"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
