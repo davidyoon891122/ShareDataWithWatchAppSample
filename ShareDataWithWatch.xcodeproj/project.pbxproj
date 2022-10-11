@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		ADD92E9B28F50C0400B7D4FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92E9A28F50C0400B7D4FA /* AppDelegate.swift */; };
 		ADD92E9D28F50C0400B7D4FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92E9C28F50C0400B7D4FA /* SceneDelegate.swift */; };
-		ADD92E9F28F50C0400B7D4FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92E9E28F50C0400B7D4FA /* ViewController.swift */; };
+		ADD92E9F28F50C0400B7D4FA /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92E9E28F50C0400B7D4FA /* TodoViewController.swift */; };
 		ADD92EA428F50C0700B7D4FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD92EA328F50C0700B7D4FA /* Assets.xcassets */; };
 		ADD92EA728F50C0700B7D4FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD92EA528F50C0700B7D4FA /* LaunchScreen.storyboard */; };
 		ADD92EB228F50C0700B7D4FA /* ShareDataWithWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92EB128F50C0700B7D4FA /* ShareDataWithWatchTests.swift */; };
-		ADD92EBC28F50C0700B7D4FA /* ShareDataWithWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92EBB28F50C0700B7D4FA /* ShareDataWithWatchUITests.swift */; };
-		ADD92EBE28F50C0700B7D4FA /* ShareDataWithWatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92EBD28F50C0700B7D4FA /* ShareDataWithWatchUITestsLaunchTests.swift */; };
+		ADD92ECE28F50CA800B7D4FA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ADD92ECD28F50CA800B7D4FA /* SnapKit */; };
+		ADD92ED028F50EA700B7D4FA /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92ECF28F50EA700B7D4FA /* TodoModel.swift */; };
+		ADD92ED228F50F6000B7D4FA /* TodoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92ED128F50F6000B7D4FA /* TodoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,15 +39,15 @@
 		ADD92E9728F50C0400B7D4FA /* ShareDataWithWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareDataWithWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD92E9A28F50C0400B7D4FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD92E9C28F50C0400B7D4FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADD92E9E28F50C0400B7D4FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADD92E9E28F50C0400B7D4FA /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		ADD92EA328F50C0700B7D4FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADD92EA628F50C0700B7D4FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADD92EA828F50C0700B7D4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADD92EAD28F50C0700B7D4FA /* ShareDataWithWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareDataWithWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD92EB128F50C0700B7D4FA /* ShareDataWithWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDataWithWatchTests.swift; sourceTree = "<group>"; };
 		ADD92EB728F50C0700B7D4FA /* ShareDataWithWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareDataWithWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADD92EBB28F50C0700B7D4FA /* ShareDataWithWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDataWithWatchUITests.swift; sourceTree = "<group>"; };
-		ADD92EBD28F50C0700B7D4FA /* ShareDataWithWatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDataWithWatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ADD92ECF28F50EA700B7D4FA /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		ADD92ED128F50F6000B7D4FA /* TodoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD92ECE28F50CA800B7D4FA /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +81,6 @@
 			children = (
 				ADD92E9928F50C0400B7D4FA /* ShareDataWithWatch */,
 				ADD92EB028F50C0700B7D4FA /* ShareDataWithWatchTests */,
-				ADD92EBA28F50C0700B7D4FA /* ShareDataWithWatchUITests */,
 				ADD92E9828F50C0400B7D4FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +103,7 @@
 				ADD92EA328F50C0700B7D4FA /* Assets.xcassets */,
 				ADD92EA528F50C0700B7D4FA /* LaunchScreen.storyboard */,
 				ADD92EA828F50C0700B7D4FA /* Info.plist */,
+				ADD92ECF28F50EA700B7D4FA /* TodoModel.swift */,
 			);
 			path = ShareDataWithWatch;
 			sourceTree = "<group>";
@@ -112,15 +114,6 @@
 				ADD92EB128F50C0700B7D4FA /* ShareDataWithWatchTests.swift */,
 			);
 			path = ShareDataWithWatchTests;
-			sourceTree = "<group>";
-		};
-		ADD92EBA28F50C0700B7D4FA /* ShareDataWithWatchUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ADD92EBB28F50C0700B7D4FA /* ShareDataWithWatchUITests.swift */,
-				ADD92EBD28F50C0700B7D4FA /* ShareDataWithWatchUITestsLaunchTests.swift */,
-			);
-			path = ShareDataWithWatchUITests;
 			sourceTree = "<group>";
 		};
 		ADD92ECA28F50C5E00B7D4FA /* Delegate */ = {
@@ -135,7 +128,8 @@
 		ADD92ECB28F50C6700B7D4FA /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				ADD92E9E28F50C0400B7D4FA /* ViewController.swift */,
+				ADD92E9E28F50C0400B7D4FA /* TodoViewController.swift */,
+				ADD92ED128F50F6000B7D4FA /* TodoCollectionViewCell.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -156,6 +150,9 @@
 			dependencies = (
 			);
 			name = ShareDataWithWatch;
+			packageProductDependencies = (
+				ADD92ECD28F50CA800B7D4FA /* SnapKit */,
+			);
 			productName = ShareDataWithWatch;
 			productReference = ADD92E9728F50C0400B7D4FA /* ShareDataWithWatch.app */;
 			productType = "com.apple.product-type.application";
@@ -228,6 +225,9 @@
 				Base,
 			);
 			mainGroup = ADD92E8E28F50C0400B7D4FA;
+			packageReferences = (
+				ADD92ECC28F50CA800B7D4FA /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = ADD92E9828F50C0400B7D4FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADD92E9F28F50C0400B7D4FA /* ViewController.swift in Sources */,
+				ADD92E9F28F50C0400B7D4FA /* TodoViewController.swift in Sources */,
+				ADD92ED028F50EA700B7D4FA /* TodoModel.swift in Sources */,
 				ADD92E9B28F50C0400B7D4FA /* AppDelegate.swift in Sources */,
+				ADD92ED228F50F6000B7D4FA /* TodoCollectionViewCell.swift in Sources */,
 				ADD92E9D28F50C0400B7D4FA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,8 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADD92EBE28F50C0700B7D4FA /* ShareDataWithWatchUITestsLaunchTests.swift in Sources */,
-				ADD92EBC28F50C0700B7D4FA /* ShareDataWithWatchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADD92ECC28F50CA800B7D4FA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADD92ECD28F50CA800B7D4FA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADD92ECC28F50CA800B7D4FA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADD92E8F28F50C0400B7D4FA /* Project object */;
 }
