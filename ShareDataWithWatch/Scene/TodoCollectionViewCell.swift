@@ -23,6 +23,7 @@ final class TodoCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.textColor = .gray
         label.font = .systemFont(ofSize: 14.0)
+        label.textAlignment = .center
         
         return label
     }()
@@ -50,6 +51,7 @@ private extension TodoCollectionViewCell {
             $0.top.equalToSuperview()
             $0.leading.equalToSuperview().offset(16.0)
             $0.bottom.equalToSuperview()
+            $0.width.equalTo(100.0)
         }
         
         contentLabel.snp.makeConstraints {
